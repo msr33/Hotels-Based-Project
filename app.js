@@ -112,11 +112,11 @@ app.use((req, res, next) => {
     res.locals.currUser = req.user;
     next();
 })
-
+/*
 app.get("/", (req, res) => {
     res.send("Hi, I am root");
 });
-
+*/
 
 app.use("/", listings);
 app.use("/", reviews);
