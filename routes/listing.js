@@ -15,7 +15,6 @@ router.get("/listings", async (req, res) => {
 
 router.get("/listings/new",isLoggedIn, (req, res) => {
     res.render("listings/new.ejs");
-
 })
 
 router.get("/listings/:id",async (req, res) => {
